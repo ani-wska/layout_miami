@@ -1,3 +1,42 @@
 .article {
-  
+  &__image {
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  &__name {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 140%;
+    padding: 0 20px;
+
+
+  }
+
+  &__category {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 140%;
+    padding: 0 20px;
+
+  }
+
+  &__price{
+    font-family: Inter;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 140%;
+    padding: 0 20px;
+
+
+  }
 }
