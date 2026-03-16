@@ -1,12 +1,13 @@
 .links {
   padding-top: 20px;
+
   &__list {
-    padding: 16px 8px;
+    padding-top: 16px;
 
   }
 
   &__item {
-    padding: 16px 8px;
+    padding-top: 30px;
 
   }
 
@@ -21,7 +22,5 @@
     text-transform: uppercase;
     color: #292929;
     text-decoration: none;
-
-
   }
 }

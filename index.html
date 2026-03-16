@@ -24,7 +24,8 @@
       <img class="navigation__logo" src="src/images/Logo.svg" alt="Logo">
       <img class="navigation__icon" src="src/images/Icon-Burger-menu.svg" alt="Menu">
     </nav>
-    <nav class="links">
+
+    <nav class="links menu__links">
       <ul class="links__list">
         <li class="links__item"><a href="#" class="links__link">Home</a></li>
         <li class="links__item"><a href="#" class="links__link">Recommended</a></li>
@@ -34,8 +35,11 @@
       </ul>
     </nav>
 
-    <p>+1 234 5555-55-55</p>
-    <a href="#">call to order</a>
+    <p class="menu__paragraph">+1 234 5555-55-55</p>
+    <p class="menu__paragraph">
+      <a href="#" class="menu__link">call to order</a>
+    </p>
+
   </div>
 
   <main class="main">
@@ -113,7 +117,7 @@
         <label class="form__label" for="message">Message</label>
         <textarea id="message" class="form__textarea" placeholder="Message"></textarea>
       </div>
-      <button class=" button button--primary" type="submit">Send</button>
+      <button class="button" type="submit" onclick="this.classList.toggle('active')">Send</button>
     </form>
     <adress class="adress">
       <h3 class="adress__label">Phone</h3>
