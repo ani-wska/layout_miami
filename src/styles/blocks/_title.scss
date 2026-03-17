@@ -62,23 +62,22 @@
     @include for-medium() {
       font-size: 40px;
       line-height: 100%;
-    }
-
-    @include for-desktop() {
       display: none;
     }
+
+
 
   }
 
   &--hidden {
     display: none;
 
-    @include for-desktop() {
+    @include for-medium() {
       display: block;
       font-family: Inter;
       font-weight: 800;
       font-style: Italic;
-      font-size: 48px;
+      font-size: 40px;
       line-height: 100%;
       letter-spacing: -1.5px;
       text-align: center;
