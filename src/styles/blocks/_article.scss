@@ -1,4 +1,7 @@
+@use '../utils/mixins' as *;
+
 .article {
+
   &__image {
     display: block;
     margin: 0 auto;
@@ -15,8 +18,16 @@
     padding: 0 10px;
     margin-top: 15px;
 
+    @include for-medium() {
+      padding-left: 180px;
+    }
+
+    @include for-desktop() {
+      padding-left: 50px;
+    }
 
   }
+
 
   &__category {
     font-family: Inter;
@@ -26,6 +37,14 @@
     letter-spacing: 0px;
     line-height: 140%;
     padding: 0 10px;
+
+    @include for-medium() {
+      padding-left: 180px;
+    }
+
+    @include for-desktop() {
+      padding-left: 50px;
+    }
 
   }
 
@@ -37,6 +56,14 @@
     letter-spacing: 0px;
     line-height: 140%;
     padding: 0 10px;
+
+    @include for-medium() {
+      padding-left: 180px;
+    }
+
+    @include for-desktop() {
+      padding-left: 50px;
+    }
   }
 
   &__paragraph {
@@ -49,5 +76,14 @@
     padding: 0 10px;
     margin-top: 50px;
 
+  }
+
+}
+
+.recommended {
+  @include for-desktop() {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 }
