@@ -16,6 +16,12 @@
   font-family: Inter;
   margin: 60px auto;
 
+  &--secondary {
+    @include for-medium() {
+      align-self: start;
+    }
+  }
+
 
   &:hover {
     background-color: white;

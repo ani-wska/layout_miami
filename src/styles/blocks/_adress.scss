@@ -1,4 +1,15 @@
+@use '../utils/mixins' as *;
+
 .adress {
+
+  @include for-medium() {
+    grid-column: 2;
+    display: block;
+  }
+
+  @include for-desktop() {
+    grid-column: 8 / 12;
+  }
   &__label {
     font-family: Inter;
     font-weight: 400;
@@ -7,7 +18,11 @@
     line-height: 140%;
     letter-spacing: 0px;
     color: #9FADC2;
-    padding-top: 30px;
+
+
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
 
 
   }

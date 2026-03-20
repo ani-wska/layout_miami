@@ -1,3 +1,6 @@
+@use '../utils/mixins' as *;
+
+
 @mixin visually-hidden() {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -8,15 +11,42 @@
   width: 1px;
 }
 
+.contacts {
 
+  @include for-medium() {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  @include for-desktop() {
+    display: grid;
+    grid-template-columns: repeat(12, 63px);
+    gap: 24px;
+  }
+}
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
 
-  &__item {
+  @include for-medium() {
+    display: block;
+    grid-column: 1;
+  }
 
+  @include for-desktop() {
+    grid-column: 1 / 7;
+    padding-left: 40px;
+
+  }
+
+  &__item {
+    @include for-medium() {
+      margin-bottom: 20px;
+    }
   }
 
   &__input {
@@ -28,6 +58,8 @@
     height: 48px;
     line-height: 48px;
     padding-left: 17px;
+
+
 
 
     &::placeholder {
