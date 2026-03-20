@@ -73,36 +73,62 @@
         <p class="article__price">$ 129.00</p>
       </article>
     </section>
+
     <h2 id="categories" class="title title--third">Browse Bose<br>products by<br>category</h2>
     <h2 id="categories" class="title title--hidden">Browse Bose<br>products by category</h2>
-    <article class="article">
-      <div class="pictures--secondary">
-        <img src="src/images/picture6.svg" class="picture__item" alt="">
-        <img src="src/images/picture5.svg" class="picture__item" alt="">
-      </div>
-      <p class="article__name">Headphones & earbuds</p>
-    </article>
-    <article class="article">
-      <div class="pictures--secondary">
-        <img src="src/images/picture4.svg" class="picture__item" alt="">
-        <img src="src/images/picture3.svg" class="picture__item" alt="">
-      </div>
-      <p class="article__name">Speakers</p>
-    </article>
-    <article class="article">
-      <div class="pictures--secondary">
-        <img src="src/images/picture2.svg" class="picture__item" alt="">
-        <img src="src/images/picture1.svg" class="picture__item" alt="">
-      </div>
-      <p class="article__name">Audio sunglasses</p>
-    </article>
+
+    <section class="categories">
+      <article class="article">
+        <div class="pictures__secondary">
+          <div class="pictures__secondary pictures__secondary--big">
+            <img src="src/images/picture6.svg" class="picture__item" alt="">
+          </div>
+          <div class="pictures__secondary pictures__secondary--small">
+            <img src="src/images/picture5.svg" class="picture__item" alt="">
+          </div>
+        </div>
+
+        <p class="article__name">Headphones & earbuds</p>
+      </article>
+
+      <article class="article">
+        <div class="pictures__secondary">
+          <div class="pictures__secondary pictures__secondary--big">
+            <img src="src/images/picture4.svg" class="picture__item" alt="">
+          </div>
+          <div class="pictures__secondary pictures__secondary--small">
+            <img src="src/images/picture3.svg" class="picture__item" alt="">
+          </div>
+        </div>
+
+        <p class="article__name">Speakers</p>
+      </article>
+
+      <article class="article">
+        <div class="pictures__secondary">
+          <div class="pictures__secondary pictures__secondary--big">
+            <img src="src/images/picture2.svg" class="picture__item" alt="">
+          </div>
+          <div class="pictures__secondary pictures__secondary--small">
+            <img src="src/images/picture1.svg" class="picture__item" alt="">
+          </div>
+        </div>
+
+        <p class="article__name">Audio sunglasses</p>
+      </article>
+    </section>
+
     <a href="#" class="button">View all</a>
-    <h2  id="how-to-buy" class="title title--secondary">Why buy direct<br>from Bose</h2>
-    <p class="article__name">Free 2-day shipping and returns</p>
-    <p class="article__name">90-day risk-free trial</p>
-    <p class="article__name">World class customer service</p>
-    <p class="article__name">My Bose account management</p>
-    <p class="article__paragraph">A great product is more than what’s in the box. It’s a promise of premium performance, world-class support, and everything you expect from a trusted brand. It’s just one of many reasons why you’ll shop with confidence on Bose.com.</p>
+
+
+    <section class="article__buy">
+      <h2  id="how-to-buy" class="article__buy article__buy--title">Why buy direct<br>from Bose</h2>
+      <p class="article__name article__name--secondary">Free 2-day shipping and returns</p>
+      <p class="article__name article__name--secondary">90-day risk-free trial</p>
+      <p class="article__name article__name--secondary">World class customer service</p>
+      <p class="article__name article__name--secondary">My Bose account management</p>
+      <p class="article__paragraph">A great product is more than what’s in the box. It’s a promise of premium performance, world-class support, and everything you expect from a trusted brand. It’s just one of many reasons why you’ll shop with confidence on Bose.com.</p>
+    </section>
     <h2 id="contacts" class="title title--secondary">Contact us</h2>
 
     <form class="form">
@@ -120,8 +146,10 @@
         <label class="form__label" for="message">Message</label>
         <textarea id="message" class="form__textarea" placeholder="Message"></textarea>
       </div>
+
       <button class="button" type="submit" onclick="this.classList.toggle('active')">Send</button>
     </form>
+
     <adress class="adress">
       <h3 class="adress__label">Phone</h3>
       <p class="adress__content">+1 234 5555-55-55</p>
@@ -129,8 +157,8 @@
       <p class="adress__content">hello@miami.com</p>
       <h3 class="adress__label">Address</h3>
       <p class="adress__content">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</p>
-
     </adress>
+
   </main>
 
   <footer class="footer">
