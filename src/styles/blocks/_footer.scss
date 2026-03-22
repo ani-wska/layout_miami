@@ -1,13 +1,23 @@
+@use '../utils/mixins' as *;
+
 .footer {
-  width: 322px;
-  height: 200px;
-  // top: 4413px;
-  left: -1px;
-  opacity: 1;
+  height: 250px;
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  background-repeat: cover;
+  box-sizing: border-box;
+
+  @include for-medium() {
+    height: 400px;
+    background-image: url(../images/footer1.svg);
+  }
+
+  @include for-desktop() {
+    height: 460px;
+  }
 
 }
