@@ -9,3 +9,26 @@
     @content;
   }
 }
+
+@mixin grid() {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 130px);
+  gap: 20px;
+
+  @include for-medium() {
+    background-image: url(../images/background1020.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: repeat(6, 80px);
+    gap: 24px;
+  }
+
+  @include for-desktop() {
+    background-position: center;
+    grid-template-columns: repeat(12, 63px);
+    gap: 24px;
+  }
+}
+
