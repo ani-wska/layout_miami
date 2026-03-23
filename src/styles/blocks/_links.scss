@@ -22,5 +22,10 @@
     text-transform: uppercase;
     color: #292929;
     text-decoration: none;
+
+
+    &:hover {
+      border-bottom: 1px solid #292929;
+    }
   }
 }
