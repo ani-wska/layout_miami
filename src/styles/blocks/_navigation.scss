@@ -1,4 +1,4 @@
-@use '../utils/mixins';
+@use '../utils/mixins' as *;
 
 .navigation {
   display: flex;
@@ -12,7 +12,7 @@
     height: 16px;
     margin-left: 10px;
 
-    @include mixins.for-medium() {
+    @include for-medium() {
       width: 188px;
       height: 24px;
     }
@@ -21,9 +21,10 @@
   &__icon {
     width: 24px;
     height: 24px;
+    align-items: flex-end;
     transform: translate(30px, 0);
 
-    @include mixins.for-medium() {
+    @include for-medium() {
       width: 32px;
       height: 32px;
     }
@@ -35,13 +36,13 @@
     height: 24px;
     transform: translate(50px, 0);
 
-    @include mixins.for-medium() {
+    @include for-medium() {
       transform: translate(120px, 0);
       width: 32px;
       height: 32px;
     }
 
-    @include mixins.for-desktop() {
+    @include for-desktop() {
       transform: translate(340px, 0);
     }
   }
