@@ -1,20 +1,19 @@
 .pictures {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  &--secondary {
+  &__secondary {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-top: 30px;
 
-      &__item {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
+    &__item {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }

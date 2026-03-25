@@ -1,39 +1,35 @@
 @use '../utils/mixins' as *;
 
 .adress {
-
-  @include for-medium() {
+  @include for-medium {
     grid-column: 2;
     display: block;
   }
 
-  @include for-desktop() {
+  @include for-desktop {
     grid-column: 8 / 12;
   }
   &__label {
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-weight: 400;
     font-style: Regular;
     font-size: 14px;
     line-height: 140%;
-    letter-spacing: 0px;
-    color: #9FADC2;
-
+    letter-spacing: 0;
+    color: #9fadc2;
 
     &:not(:first-child) {
       margin-top: 30px;
     }
-
-
   }
 
   &__content {
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-weight: 400;
     font-style: Regular;
     font-size: 16px;
     line-height: 140%;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     padding-top: 10px;
   }
 }

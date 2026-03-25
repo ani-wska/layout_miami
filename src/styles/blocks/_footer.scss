@@ -11,13 +11,12 @@
   align-items: center;
   box-sizing: border-box;
 
-  @include for-medium() {
+  @include for-medium {
     height: 400px;
     background-image: url(../images/footer1.svg);
   }
 
-  @include for-desktop() {
+  @include for-desktop {
     height: 460px;
   }
-
 }
