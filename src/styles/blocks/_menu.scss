@@ -10,6 +10,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  z-index: 999;
 
   &:target {
     transform: translateX(0);
