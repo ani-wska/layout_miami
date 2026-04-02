@@ -17,6 +17,8 @@
   margin: 60px auto;
 
   &--secondary {
+    width: 100%;
+
     @include for-medium {
       align-self: start;
     }

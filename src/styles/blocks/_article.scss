@@ -29,6 +29,7 @@
     aspect-ratio: 1 / 1;
     overflow: hidden;
     height: 150px;
+    margin-top: 20px;
 
     img {
       width: 100%;
@@ -66,7 +67,7 @@
     }
 
     @include for-desktop {
-      padding-left: 50px;
+      padding-left: 20px;
     }
 
     &--secondary {
@@ -83,6 +84,19 @@
     }
   }
 
+  &__product {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+
+    @include for-medium {
+      font-size: 24px;
+    }
+  }
+
   &__category {
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -96,7 +110,7 @@
     }
 
     @include for-desktop {
-      padding-left: 50px;
+      padding-left: 20px;
     }
   }
 
@@ -113,7 +127,7 @@
     }
 
     @include for-desktop {
-      padding-left: 50px;
+      padding-left: 20px;
     }
   }
 

@@ -3,7 +3,7 @@
 .contacts {
   @include for-medium {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: start;
   }
@@ -11,7 +11,7 @@
   @include for-desktop {
     display: grid;
     grid-template-columns: repeat(12, 63px);
-    gap: 24px;
+    gap: 30px;
   }
 }
 
@@ -27,7 +27,7 @@
   }
 
   @include for-desktop {
-    grid-column: 1 / 7;
+    grid-column: 1 / 6;
     padding-left: 40px;
   }
 
