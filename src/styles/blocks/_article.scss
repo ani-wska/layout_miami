@@ -11,17 +11,9 @@
   margin: 0;
 
   &__grid {
-    display: grid;
+    display: flex;
     gap: 10px;
     margin-bottom: 15px;
-
-    &--1 {
-      grid-template-columns: 2fr 1fr;
-    }
-
-    &--2 {
-      grid-template-columns: 1fr 2fr;
-    }
   }
 
   &__image-wrapper {

@@ -326,17 +326,9 @@ table {
 }
 
 .article__grid {
-  display: grid;
+  display: flex;
   gap: 10px;
   margin-bottom: 15px;
-}
-
-.article__grid--1 {
-  grid-template-columns: 2fr 1fr;
-}
-
-.article__grid--2 {
-  grid-template-columns: 1fr 2fr;
 }
 
 .article__image-wrapper {
