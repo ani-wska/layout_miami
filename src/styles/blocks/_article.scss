@@ -144,7 +144,7 @@
   }
 
   &__buy {
-    margin-top: 50px;
+    margin-bottom: -40px;
     padding: 0 20px;
 
     @include for-medium {
@@ -152,6 +152,7 @@
       grid-template-columns: 1fr 1fr;
       column-gap: 40px;
       align-items: start;
+      margin-bottom: -140px;
     }
 
     &--title {
