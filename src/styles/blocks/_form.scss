@@ -1,6 +1,8 @@
 @use '../utils/mixins' as *;
 
 .contacts {
+  margin: 0 20px;
+
   @include for-medium {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,8 +29,12 @@
   }
 
   @include for-desktop {
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
     padding-left: 40px;
+  }
+
+  &__adress {
+    grid-column: 10 / 12;
   }
 
   &__item {

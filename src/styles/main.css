@@ -227,8 +227,9 @@ table {
   background-image: url(../images/background-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
-  min-width: 100%;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
   padding: 0 20px 20px;
   box-sizing: border-box;
   display: grid;
@@ -300,24 +301,13 @@ table {
 }
 
 .main {
-  padding: 0 20px 60px;
-}
-
-@media (min-width: 744px) {
-  .main {
-    padding: 0 72px 60px;
-  }
-}
-
-@media (min-width: 1020px) {
-  .main {
-    padding: 0 120px 60px;
-  }
+  margin: 0 20px;
 }
 
 .categories {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 32px;
   padding: 20px;
 }
@@ -363,6 +353,7 @@ table {
 .article__image {
   display: block;
   margin: 0 auto;
+  height: auto;
 }
 
 .article__name {
@@ -383,7 +374,7 @@ table {
 
 @media (min-width: 1020px) {
   .article__name {
-    padding-left: 20px;
+    padding-left: 80px;
   }
 }
 
@@ -434,7 +425,7 @@ table {
 
 @media (min-width: 1020px) {
   .article__category {
-    padding-left: 20px;
+    padding-left: 80px;
   }
 }
 
@@ -455,7 +446,7 @@ table {
 
 @media (min-width: 1020px) {
   .article__price {
-    padding-left: 20px;
+    padding-left: 80px;
   }
 }
 
@@ -483,16 +474,14 @@ table {
 
 .article__buy {
   margin-bottom: -40px;
-  padding: 0 20px;
 }
 
 @media (min-width: 744px) {
   .article__buy {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
     align-items: start;
-    margin-bottom: -140px;
+    margin-bottom: 0 20px -140px 20px;
   }
 }
 
@@ -513,7 +502,7 @@ table {
   .article__buy--title {
     font-size: 40px;
     line-height: 100%;
-    grid-column: 1 / span 5;
+    grid-column: span 2;
     align-self: start;
   }
 }
@@ -529,7 +518,6 @@ table {
   .recommended {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
   }
 }
 
@@ -609,6 +597,10 @@ table {
   text-align: center;
 }
 
+.contacts {
+  margin: 0 20px;
+}
+
 @media (min-width: 744px) {
   .contacts {
     display: grid;
@@ -642,9 +634,13 @@ table {
 
 @media (min-width: 1020px) {
   .form {
-    grid-column: 1/6;
+    grid-column: 1/7;
     padding-left: 40px;
   }
+}
+
+.form__adress {
+  grid-column: 10/12;
 }
 
 @media (min-width: 744px) {
@@ -779,6 +775,7 @@ table {
   justify-content: flex-end;
   align-items: center;
   box-sizing: border-box;
+  margin-top: 60px;
 }
 
 @media (min-width: 744px) {
@@ -979,7 +976,7 @@ table {
   text-transform: uppercase;
   color: #292929;
   position: absolute;
-  transform: translateX(-100%) translateY(calc(80% - 10px));
+  transform: translateX(-100%) translateY(calc(120% - 10px));
 }
 
 .phone:not(:hover) .phone__label {
