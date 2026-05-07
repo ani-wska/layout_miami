@@ -22,6 +22,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  width: 100%;
+  margin: 0 auto;
 
   @include for-medium {
     display: block;

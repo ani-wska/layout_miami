@@ -6,6 +6,13 @@
   background-image: url(../images/Icon-Burger-Menu.svg);
   background-size: cover;
 
+  @include for-medium {
+    transform: translate(150px, 0);
+  }
+
+  @include for-desktop {
+    transform: translate(90px, 0);
+  }
   &:hover {
     background-image: url(../images/Icon-Burger-menu-hover.svg);
   }

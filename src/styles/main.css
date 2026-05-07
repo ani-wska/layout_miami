@@ -164,8 +164,8 @@ table {
   letter-spacing: -1.5px;
   align-items: center;
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 744px) {
@@ -300,10 +300,6 @@ table {
   }
 }
 
-.main {
-  margin: 0 20px;
-}
-
 .categories {
   display: flex;
   flex-direction: column;
@@ -313,7 +309,7 @@ table {
 }
 
 .article {
-  margin: 0;
+  margin: 0 20px;
 }
 
 .article__grid {
@@ -326,7 +322,7 @@ table {
   position: relative;
   aspect-ratio: 1/1;
   overflow: hidden;
-  height: 150px;
+  height: 130px;
   margin-top: 20px;
 }
 
@@ -360,7 +356,7 @@ table {
   font-family: Inter, sans-serif;
   font-weight: 700;
   font-style: bold;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 0;
   line-height: 140%;
   margin-top: 15px;
@@ -473,7 +469,7 @@ table {
 }
 
 .article__buy {
-  margin-bottom: -40px;
+  margin: 0 20px -40px;
 }
 
 @media (min-width: 744px) {
@@ -481,7 +477,7 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
-    margin-bottom: 0 20px -140px 20px;
+    margin-bottom: -160px;
   }
 }
 
@@ -494,8 +490,7 @@ table {
   letter-spacing: -1.5px;
   align-items: center;
   text-align: left;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 90px 20px 30px 0;
 }
 
 @media (min-width: 744px) {
@@ -559,11 +554,13 @@ table {
   height: 56px;
   line-height: 56px;
   font-family: Inter, sans-serif;
-  margin: 60px auto;
+  font-weight: 700;
+  margin: 15px auto;
 }
 
 .button--secondary {
   width: 100%;
+  margin: 30px auto;
 }
 
 @media (min-width: 744px) {
@@ -623,6 +620,8 @@ table {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 @media (min-width: 744px) {
@@ -732,7 +731,6 @@ table {
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0;
-  padding-top: 10px;
 }
 
 .adress__content--phone {
@@ -775,7 +773,7 @@ table {
   justify-content: flex-end;
   align-items: center;
   box-sizing: border-box;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 @media (min-width: 744px) {
@@ -816,7 +814,6 @@ table {
   width: 24px;
   height: 24px;
   align-items: flex-end;
-  transform: translate(30px, 0);
 }
 
 @media (min-width: 744px) {
@@ -829,7 +826,7 @@ table {
 .navigation__phone {
   width: 24px;
   height: 24px;
-  transform: translate(50px, 0);
+  transform: translate(30px, 0);
 }
 
 @media (min-width: 744px) {
@@ -943,6 +940,18 @@ table {
   background-size: cover;
 }
 
+@media (min-width: 744px) {
+  .burger {
+    transform: translate(150px, 0);
+  }
+}
+
+@media (min-width: 1020px) {
+  .burger {
+    transform: translate(90px, 0);
+  }
+}
+
 .burger:hover {
   background-image: url(../images/Icon-Burger-menu-hover.svg);
 }
@@ -960,6 +969,18 @@ table {
 .phone {
   display: flex;
   gap: 20px;
+}
+
+@media (min-width: 744px) {
+  .phone {
+    transform: translate(250px, 0);
+  }
+}
+
+@media (min-width: 1020px) {
+  .phone {
+    transform: translate(400px, 0);
+  }
 }
 
 .phone__label {
