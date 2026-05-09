@@ -229,7 +229,6 @@ table {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: 100%;
   padding: 0 20px 20px;
   box-sizing: border-box;
   display: grid;
@@ -370,7 +369,7 @@ table {
 
 @media (min-width: 1020px) {
   .article__name {
-    padding-left: 80px;
+    padding-left: 20px;
   }
 }
 
@@ -421,7 +420,7 @@ table {
 
 @media (min-width: 1020px) {
   .article__category {
-    padding-left: 80px;
+    padding-left: 20px;
   }
 }
 
@@ -442,7 +441,7 @@ table {
 
 @media (min-width: 1020px) {
   .article__price {
-    padding-left: 80px;
+    padding-left: 20px;
   }
 }
 
@@ -610,7 +609,7 @@ table {
 @media (min-width: 1020px) {
   .contacts {
     display: grid;
-    grid-template-columns: repeat(12, 63px);
+    grid-template-columns: repeat(11, 63px);
     gap: 30px;
   }
 }
@@ -639,7 +638,7 @@ table {
 }
 
 .form__adress {
-  grid-column: 10/12;
+  grid-column: 9/11;
 }
 
 @media (min-width: 744px) {
@@ -792,15 +791,18 @@ table {
 .navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 25px;
-  padding-right: 20px;
+  padding: 25px 20px 0;
+}
+
+@media (min-width: 744px) {
+  .navigation {
+    padding: 25px 40px 0;
+  }
 }
 
 .navigation__logo {
   width: 125px;
   height: 16px;
-  margin-left: 10px;
 }
 
 @media (min-width: 744px) {
@@ -810,10 +812,29 @@ table {
   }
 }
 
+.navigation__actions {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+@media (min-width: 744px) {
+  .navigation__actions {
+    gap: 20px;
+    transform: translateX(150px);
+  }
+}
+
+@media (min-width: 1020px) {
+  .navigation__actions {
+    gap: 20px;
+    transform: translateX(60px);
+  }
+}
+
 .navigation__icon {
   width: 24px;
   height: 24px;
-  align-items: flex-end;
 }
 
 @media (min-width: 744px) {
@@ -826,20 +847,12 @@ table {
 .navigation__phone {
   width: 24px;
   height: 24px;
-  transform: translate(30px, 0);
 }
 
 @media (min-width: 744px) {
   .navigation__phone {
-    transform: translate(120px, 0);
     width: 32px;
     height: 32px;
-  }
-}
-
-@media (min-width: 1020px) {
-  .navigation__phone {
-    transform: translate(340px, 0);
   }
 }
 
@@ -940,18 +953,6 @@ table {
   background-size: cover;
 }
 
-@media (min-width: 744px) {
-  .burger {
-    transform: translate(150px, 0);
-  }
-}
-
-@media (min-width: 1020px) {
-  .burger {
-    transform: translate(90px, 0);
-  }
-}
-
 .burger:hover {
   background-image: url(../images/Icon-Burger-menu-hover.svg);
 }
@@ -968,19 +969,8 @@ table {
 
 .phone {
   display: flex;
+  position: relative;
   gap: 20px;
-}
-
-@media (min-width: 744px) {
-  .phone {
-    transform: translate(250px, 0);
-  }
-}
-
-@media (min-width: 1020px) {
-  .phone {
-    transform: translate(400px, 0);
-  }
 }
 
 .phone__label {
