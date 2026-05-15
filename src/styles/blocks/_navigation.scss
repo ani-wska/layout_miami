@@ -1,16 +1,9 @@
 @use '../utils/mixins' as *;
 
-$nav-padding-mobile: 20px;
-$nav-padding-desktop: 40px;
-
 .navigation {
   display: flex;
   justify-content: space-between;
-  padding: 25px $nav-padding-mobile 0;
-
-  @include for-medium {
-    padding: 25px $nav-padding-desktop 0;
-  }
+  padding: 25px 0 0;
 
   &__logo {
     width: 125px;
@@ -29,12 +22,10 @@ $nav-padding-desktop: 40px;
 
     @include for-medium {
       gap: 20px;
-      transform: translateX(150px);
     }
 
     @include for-desktop {
       gap: 20px;
-      transform: translateX(60px);
     }
   }
 

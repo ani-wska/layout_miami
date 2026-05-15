@@ -7,10 +7,14 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
-  padding: 0 20px 20px;
+  padding: 0 20px 40px;
   box-sizing: border-box;
 
   @include grid;
+
+  @include for-medium {
+    background-image: url(../images/background1020.jpg);
+  }
 
   &__navigation {
     align-self: start;

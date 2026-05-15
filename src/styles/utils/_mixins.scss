@@ -5,7 +5,7 @@
 }
 
 @mixin for-desktop() {
-  @media (min-width: 1020px) {
+  @media (min-width: 1260px) {
     @content;
   }
 }
@@ -17,7 +17,6 @@
   gap: 20px;
 
   @include for-medium {
-    background-image: url(../images/background1020.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
