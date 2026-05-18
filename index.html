@@ -18,8 +18,10 @@
           <img class="navigation__logo" src="src/images/Logo.svg"
           alt="Logo">
         </a>
-        <a class="phone navigation__phone" href="tel:+1 234 555-55-55"><span class="phone__label">+1 234 555-55-55</span><img src="src/images/Icon-Phone-call.svg" alt="Phone"></a>
-        <a href="#menu" class="burger navigation__icon"><span class="burger__label">Open menu</span></a>
+        <div class="navigation__actions">
+          <a class="phone navigation__phone" href="tel:+1 234 555-55-55"><span class="phone__label">+1 234 555-55-55</span><img src="src/images/Icon-Phone-call.svg" alt="Phone"></a>
+          <a href="#menu" class="burger navigation__icon"><span class="burger__label">Open menu</span></a>
+        </div>
       </nav>
       <h1 class="title title--decorated header__title">The world shades.<br>Your music shines.</h1>
     </header>
@@ -56,31 +58,31 @@
 
       <section class="recommended">
         <article class="article">
-          <!-- <div class="pictures"> -->
-            <img class="article__image" src="src/images/Image1.jpg" alt="">
-          <!-- </div> -->
-          <p class="article__name">Bose portable Smart speaker</p>
-          <p class="article__category">Smart home</p>
-          <p class="article__price">$ 399.00</p>
+          <img class="article__image" src="src/images/Image1.jpg" alt="">
+          <div class="article__wrapper">
+            <p class="article__name">Bose portable Smart speaker</p>
+            <p class="article__category">Smart home</p>
+            <p class="article__price">$ 399.00</p>
+          </div>
         </article>
 
         <article class="article">
-          <!-- <div class="pictures"> -->
-            <img class="article__image" src="src/images/Image2.jpg" alt="">
-          <!-- </div> -->
-          <p class="article__name">SoundLink Flex Bluetooth speaker</p>
-          <p class="article__category">Portable bluetooth</p>
-          <p class="article__price">$ 149.00</p>
+          <img class="article__image" src="src/images/Image2.jpg" alt="">
+          <div class="article__wrapper">
+            <p class="article__name">SoundLink Flex Bluetooth speaker</p>
+            <p class="article__category">Portable bluetooth</p>
+            <p class="article__price">$ 149.00</p>
+          </div>
         </article>
 
         <article class="article">
-          <!-- <div class="pictures"> -->
-            <img class="article__image" src="src/images/Image3.jpg"
+          <img class="article__image" src="src/images/Image3.jpg"
             alt="Picture 1">
-          <!-- </div> -->
-          <p class="article__name">SoundLink Color Bluetooth speaker II</p>
-          <p class="article__category">Portable bluetooth</p>
-          <p class="article__price">$ 129.00</p>
+          <div class="article__wrapper">
+            <p class="article__name">SoundLink Color Bluetooth speaker II</p>
+            <p class="article__category">Portable bluetooth</p>
+            <p class="article__price">$ 129.00</p>
+          </div>
         </article>
       </section>
 
@@ -184,11 +186,8 @@
           </div>
         </adress>
       </section>
-
     </main>
-
     <footer class="footer"></footer>
-
   </body>
   <script src="src/scripts/main.js"></script>
 </html>
