@@ -1,16 +1,16 @@
 @use '../utils/mixins' as *;
 
 .categories {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 32px;
-  padding: 20px;
 }
 
 .article {
-  margin: 0 20px;
-
+  justify-content: center;
   .recommended & {
     margin: 0;
   }
@@ -58,6 +58,10 @@
     gap: 8px;
     margin: 20px auto 0;
     width: fit-content;
+
+    @include for-desktop {
+      margin: 30px 0 0;
+    }
   }
 
   &__name {
@@ -72,13 +76,6 @@
     &--secondary {
       transform: none;
       padding-left: 0;
-
-      @include for-medium {
-        grid-column: 2;
-        justify-self: start;
-        padding: 0;
-        transform: translateY(-120px);
-      }
     }
   }
 
@@ -119,14 +116,6 @@
     font-size: 16px;
     letter-spacing: 0;
     line-height: 140%;
-
-    @include for-medium {
-      padding-left: 0;
-    }
-
-    @include for-desktop {
-      padding-left: 0;
-    }
   }
 
   &__paragraph {
@@ -139,24 +128,47 @@
     margin-top: 50px;
 
     @include for-medium {
-      grid-column: 2;
+      grid-column: 5 / 11;
       margin-top: 30px;
       padding: 0;
       text-align: left;
       justify-self: end;
-      transform: translateY(-120px);
+      line-height: 27px;
+    }
+
+    @include for-desktop {
+      grid-column: 8 / 13;
+      margin-top: 30px;
+      padding: 0;
+      text-align: left;
+      justify-self: end;
       line-height: 27px;
     }
   }
 
   &__buy {
-    margin: 0 20px -40px;
-
     @include for-medium {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(12, 63px);
+      gap: 24px;
       align-items: start;
-      margin-bottom: -160px;
+      margin-top: -160px;
+    }
+
+    &--features-list {
+      @include for-medium {
+        grid-column: 5 / 10;
+        grid-row: 1;
+        align-self: start;
+        transform: translateY(240px);
+      }
+
+      @include for-desktop {
+        grid-column: 8 / 13;
+        grid-row: 1;
+        align-self: start;
+        transform: translateY(240px);
+      }
     }
 
     &--title {
@@ -173,14 +185,15 @@
       @include for-medium {
         font-size: 40px;
         line-height: 100%;
-        grid-column: span 2;
+        grid-column: 1 / 7;
         align-self: start;
       }
 
       @include for-desktop {
         font-size: 48px;
         line-height: 100%;
-        margin: 90px 20px 30px 80px;
+        margin: 250px 20px 30px 0;
+        grid-column: 2 / 7;
       }
     }
   }
@@ -189,7 +202,6 @@
 .recommended {
   display: grid;
   gap: 10px;
-  padding: 0 20px;
 
   @include for-desktop {
     grid-template-columns: repeat(3, 1fr);

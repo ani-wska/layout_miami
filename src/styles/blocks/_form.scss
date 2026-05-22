@@ -1,8 +1,6 @@
 @use '../utils/mixins' as *;
 
 .contacts {
-  margin: 0 20px;
-
   @include for-medium {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,7 +21,6 @@
   justify-content: center;
   gap: 20px;
   width: 100%;
-  margin: 0 auto;
 
   @include for-medium {
     display: block;
@@ -32,11 +29,10 @@
 
   @include for-desktop {
     grid-column: 1 / 7;
-    padding-left: 40px;
   }
 
   &__adress {
-    grid-column: 9 / 11;
+    grid-column: 9 / 12;
   }
 
   &__item {

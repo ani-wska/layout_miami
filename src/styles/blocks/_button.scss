@@ -16,6 +16,7 @@
   font-family: Inter, sans-serif;
   font-weight: 700;
   margin: 15px auto;
+  box-sizing: border-box;
 
   &--secondary {
     width: 100%;
@@ -37,6 +38,9 @@
     letter-spacing: 0;
     text-align: center;
     border: 3px solid #292929;
+    transition:
+      background-color 0.3s ease,
+      transform 0.6s ease;
   }
 
   &.active {
